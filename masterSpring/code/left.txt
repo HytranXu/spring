@@ -1,0 +1,4 @@
+1、maven可以建立一个跟模块，用来管理每个子模块的公共依赖配置
+2、mycat、mybatis、springboot\spring cloud
+3、js
+4、Portlet
