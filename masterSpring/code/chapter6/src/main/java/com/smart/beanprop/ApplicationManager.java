@@ -24,9 +24,8 @@ public class ApplicationManager {
 	public void setMaxTabPageNum(int maxTabPageNum) {
 		this.maxTabPageNum = maxTabPageNum;
 	}
-	
+
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}
-
 }

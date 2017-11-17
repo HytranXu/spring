@@ -16,12 +16,12 @@ public class PropertyPlaceTest{
 	@BeforeClass
 	public void setUp() throws Exception {
 		ctx = new ClassPathXmlApplicationContext(CONFIG_FILES);
-		
 	}
 
 	@Test
 	public void testCustomerCarEditor(){
 		MyDataSource dataSource = (MyDataSource)ctx.getBean(MyDataSource.class);
 		assertNotNull(dataSource);
+		System.out.println(dataSource.toString());
 	} 	
 }

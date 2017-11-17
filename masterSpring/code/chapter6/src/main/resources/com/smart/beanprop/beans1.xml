@@ -7,13 +7,13 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-4.0.xsd">
    	<context:property-placeholder
-		 location="classpath:com/smart/placeholder/jdbc.properties"/>
+		 location="classpath:com/smart/beanprop/jdbc.properties"/>
 	<context:component-scan base-package="com.smart.beanprop"/>
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close" 
 		p:driverClassName="${driverClassName}" 
 		p:url="${url}"
-		p:username="${userName}" 
+		p:username="${usrName}"
 		p:password="${password}" />
 		
 	<bean id="sysConfig" class="com.smart.beanprop.SysConfig"

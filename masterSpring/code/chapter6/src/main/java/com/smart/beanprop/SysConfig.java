@@ -2,7 +2,6 @@ package com.smart.beanprop;
 
 import javax.sql.DataSource;
 
-
 public class SysConfig {
 	private int sessionTimeout;
 	private int maxTabPageNum;
@@ -26,6 +25,4 @@ public class SysConfig {
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
-	
-	
 }
