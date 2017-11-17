@@ -101,13 +101,13 @@
       <file leaf-file-name="beans.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="360">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
-                <element signature="e#1502#1522#0" expanded="true" />
-                <element signature="e#1533#1541#0" expanded="true" />
-                <element signature="e#1557#1570#0" expanded="true" />
-                <element signature="e#1586#1599#0" expanded="true" />
+                <element signature="e#1503#1523#0" expanded="true" />
+                <element signature="e#1534#1542#0" expanded="true" />
+                <element signature="e#1558#1571#0" expanded="true" />
+                <element signature="e#1587#1600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,6 +163,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -1257,8 +1260,16 @@
       <workItem from="1510709479093" duration="6233000" />
       <workItem from="1510798112726" duration="3617000" />
       <workItem from="1510846020425" duration="2972000" />
-      <workItem from="1510882870473" duration="5821000" />
+      <workItem from="1510882870473" duration="6376000" />
     </task>
+    <task id="LOCAL-00001" summary="test idea commit and push">
+      <created>1510889569077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510889569077</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1294,7 +1305,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141097000" />
+    <option name="totallyTimeSpent" value="141652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1834,13 +1845,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <element signature="e#1502#1522#0" expanded="true" />
-            <element signature="e#1533#1541#0" expanded="true" />
-            <element signature="e#1557#1570#0" expanded="true" />
-            <element signature="e#1586#1599#0" expanded="true" />
+            <element signature="e#1503#1523#0" expanded="true" />
+            <element signature="e#1534#1542#0" expanded="true" />
+            <element signature="e#1558#1571#0" expanded="true" />
+            <element signature="e#1587#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>
