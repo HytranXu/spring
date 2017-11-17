@@ -2,10 +2,8 @@ package com.smart.placeholder;
 
 import java.security.Key;
 import java.security.SecureRandom;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
-
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -44,7 +42,7 @@ public class DESUtils {
 
 	/**
 	 * 对str进行DES解密
-	 * 
+	 *
 	 * @param str
 	 * @return
 	 */
@@ -65,13 +63,15 @@ public class DESUtils {
 	public static void main(String[] args) throws Exception {
 		if (args == null || args.length < 1) {
 			System.out.println("请输入要加密的字符，用空格分隔.");
+			System.out.println("tempresult : " + getEncryptString("xuhc"));
+			System.out.println(getDecryptString("EemByALbGwk="));
 		} else {
 			for (String arg : args) {
 				System.out.println(arg + ":" + getEncryptString(arg));
 			}
 		}
 		
-		//System.out.println(getDecryptString("WnplV/ietfQ="));
-		//System.out.println(getDecryptString("gJQ9O+q34qk="));
+		System.out.println(getDecryptString("WnplV/ietfQ="));
+		System.out.println(getDecryptString("gJQ9O+q34qk="));
 	}
 }

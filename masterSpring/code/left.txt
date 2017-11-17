@@ -2,4 +2,5 @@
 2¡¢mycat¡¢mybatis¡¢springboot\spring cloud
 3¡¢js
 4¡¢Î¢ÐÅ¡¢qq¶Ô½Ó
-5¡¢Portlet
+5¡¢kafka
+6¡¢Portlet
