@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5a48a40-d2c7-4858-8b63-3095839061cf" name="Default" comment="">
+    <list default="true" id="f5a48a40-d2c7-4858-8b63-3095839061cf" name="Default" comment="test idea commit and push">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/chapter6.iml" afterPath="$PROJECT_DIR$/code/chapter6/chapter6.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/beanprop/AnnoBeanPropReferenceTest.java" afterPath="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/beanprop/AnnoBeanPropReferenceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/placeholder/DESUtils.java" afterPath="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/placeholder/DESUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml" afterPath="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/jdbc.properties" afterPath="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/chapter6/src/test/java/com/smart/place/PlaceHolderTest.java" afterPath="$PROJECT_DIR$/code/chapter6/src/test/java/com/smart/place/PlaceHolderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/left.txt" afterPath="$PROJECT_DIR$/code/left.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/code/chapter2/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaceHolderTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlaceHolderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/chapter6/src/test/java/com/smart/place/PlaceHolderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="389">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="e#483#484#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
@@ -104,16 +98,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beans.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="beans.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+            <state relative-caret-position="324">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <element signature="e#1501#1521#0" expanded="true" />
-                <element signature="e#1532#1540#0" expanded="true" />
-                <element signature="e#1556#1569#0" expanded="true" />
-                <element signature="e#1585#1598#0" expanded="true" />
+                <element signature="e#1502#1522#0" expanded="true" />
+                <element signature="e#1533#1541#0" expanded="true" />
+                <element signature="e#1557#1570#0" expanded="true" />
+                <element signature="e#1586#1599#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,8 +221,8 @@
         <option value="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/jdbc.properties" />
         <option value="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/placeholder/DESUtils.java" />
         <option value="$PROJECT_DIR$/code/chapter6/src/test/java/com/smart/place/PlaceHolderTest.java" />
-        <option value="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml" />
         <option value="$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/placeholder/MyDataSource.java" />
+        <option value="$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml" />
       </list>
     </option>
   </component>
@@ -1263,7 +1257,7 @@
       <workItem from="1510709479093" duration="6233000" />
       <workItem from="1510798112726" duration="3617000" />
       <workItem from="1510846020425" duration="2972000" />
-      <workItem from="1510882870473" duration="5559000" />
+      <workItem from="1510882870473" duration="5821000" />
     </task>
     <servers />
   </component>
@@ -1300,7 +1294,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140835000" />
+    <option name="totallyTimeSpent" value="141097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,11 +1326,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4446142" sideWeight="0.4919159" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35905272" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="43" y="554" width="2474" height="431" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20452708" sideWeight="0.49274254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20452708" sideWeight="0.49274254" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942602" sideWeight="0.49555272" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23807599" sideWeight="0.50725746" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1427,6 +1421,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test idea commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="test idea commit and push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1797,19 +1795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-          <folding>
-            <element signature="e#1501#1521#0" expanded="true" />
-            <element signature="e#1532#1540#0" expanded="true" />
-            <element signature="e#1556#1569#0" expanded="true" />
-            <element signature="e#1585#1598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/java/com/smart/placeholder/EncryptPropertyPlaceholderConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1838,11 +1823,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/chapter6/src/test/java/com/smart/place/PlaceHolderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="389">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="e#483#484#0" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/chapter6/src/main/resources/com/smart/placeholder/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#1502#1522#0" expanded="true" />
+            <element signature="e#1533#1541#0" expanded="true" />
+            <element signature="e#1557#1570#0" expanded="true" />
+            <element signature="e#1586#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
