@@ -11,7 +11,6 @@ public class MailSendEvent extends ApplicationContextEvent {
 		this.to = to;
 	}
 	public String getTo() {
-		
 		return this.to;
 	}
 }

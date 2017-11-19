@@ -19,6 +19,5 @@ public class CustomerEditorTest {
 		Boss boss = (Boss) ctx.getBean("boss");
 		assertNotNull(boss);
 	    System.out.println(boss);
-	} 
-	
+	}
 }

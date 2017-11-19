@@ -15,6 +15,7 @@ public class LocaleSample {
 		double amt = 123456.78;
 		System.out.println(currFmt.format(amt));
 	}
+
 	public static void dateFormat() {
 		Locale locale = new Locale("en", "US");
 		Date date = new Date();
@@ -30,6 +31,7 @@ public class LocaleSample {
 		String msg1 = MessageFormat.format(pattern1,params);
 		MessageFormat mf = new MessageFormat(pattern2,Locale.US);
 		String msg2 = mf.format(params);
+
 		System.out.println(msg1);
 		System.out.println(msg2);
 	}
@@ -37,6 +39,7 @@ public class LocaleSample {
 	public static void resourceBoundle(){
 		ResourceBundle rb1 = ResourceBundle.getBundle("com/smart/i18n/resource",Locale.US);
 		ResourceBundle rb2 = ResourceBundle.getBundle("com/smart/i18n/resource",Locale.CANADA);
+
 		System.out.println("us:"+rb1.getString("greeting.common"));
 		System.out.println("cn:"+rb2.getString("greeting.common"));
 	}
@@ -49,10 +52,12 @@ public class LocaleSample {
 		String str1 = new MessageFormat(rb1.getString("greeting.common"),Locale.US).format(params);
 		String str2 =new MessageFormat(rb2.getString("greeting.morning"),Locale.CHINA).format(params);
 		String str3 =new MessageFormat(rb2.getString("greeting.afternoon"),Locale.CHINA).format(params);
+
 		System.out.println(str1);
 		System.out.println(str2);
 		System.out.println(str3);
-	}	
+	}
+
 	public static void main(String[] args) {
 		numberFormat();
 		dateFormat();

@@ -9,7 +9,6 @@ import java.util.Locale;
 import static org.testng.Assert.*;
 
 public class MessageFormatTest {
-
     @Test
     public void format() {
         //①信息格式化串
@@ -27,6 +26,5 @@ public class MessageFormatTest {
         String msg2 = mf.format(params);
         System.out.println(msg1);
         System.out.println(msg2);
-
     }
 }

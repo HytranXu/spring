@@ -18,6 +18,7 @@ public class MailSenderTest{
 	@Test
 	public void testMailSender() {
        MailSender mailSender = (MailSender)ctx.getBean("mailSender");
+       System.out.println("In MailSenderTest::testMailSender");
        mailSender.sendMail("aaa@bbb.com");
 	}
 }
