@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.testng.Assert.*;
 import org.testng.annotations.*;
 public class ThrowAdviceTest {
-
 	@Test
 	public void throwAdvice(){
 		String configPath = "com/smart/advice/beans.xml";
@@ -14,10 +13,14 @@ public class ThrowAdviceTest {
 		
 		try{
 			forumService.removeForum(10);
-		} catch (Exception e) {}		
+		} catch (Exception e) {
+			System.out.println("Exception in removeForum : " + e.getMessage());
+		}
 		
 		try{
 			forumService.updateForum(new Forum());
-		} catch (Exception e) {}			
+		} catch (Exception e) {
+			System.out.println("Exception in updateForum : " + e.getMessage());
+		}
 	}
 }

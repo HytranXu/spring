@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.testng.Assert.*;
 import org.testng.annotations.*;
 public class RegexpAdvisorTest {
-
 	@Test
 	public void regexp(){
 		String configPath = "com/smart/advisor/beans.xml";

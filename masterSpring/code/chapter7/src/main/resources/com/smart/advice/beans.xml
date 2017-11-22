@@ -10,28 +10,25 @@
 	<bean id="greetingAround" class="com.smart.advice.GreetingInterceptor" />
 	<bean id="target" class="com.smart.advice.NaiveWaiter" />
 
-
 	<!--1. greetingAdvice -->
-	<!--
-		bean id="waiter"
+	<bean id="waiter_greeting"
 		class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:proxyInterfaces="com.smart.advice.Waiter" p:target-ref="target"
-		p:interceptorNames="greetingAdvice"/
-	-->
-
+		p:proxyInterfaces="com.smart.advice.Waiter"
+		p:target-ref="target"
+		p:interceptorNames="greetingAdvice"/>
 
 	<!--2. before and after advice -->
-	<!--
-		bean id="waiter"
+	<bean id="waiter_before_and_after"
 		class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:proxyInterfaces="com.smart.advice.Waiter" p:target-ref="target"
-		p:interceptorNames="greetingBefore,greetingAfter"/
-	-->
-    <!--3. around advice -->
-	<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:proxyInterfaces="com.smart.advice.Waiter" p:target-ref="target"
-		p:interceptorNames="greetingAround" />
+		p:proxyInterfaces="com.smart.advice.Waiter"
+		p:target-ref="target"
+		p:interceptorNames="greetingBefore,greetingAfter"/>
 
+    <!--3. around advice -->
+	<bean id="waiter_around" class="org.springframework.aop.framework.ProxyFactoryBean"
+		p:proxyInterfaces="com.smart.advice.Waiter"
+		p:target-ref="target"
+		p:interceptorNames="greetingAround" />
 
 	<!--4. 异常抛出增强  -->
 	<bean id="forumServiceTarget" class="com.smart.advice.ForumService" />

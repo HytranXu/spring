@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.testng.annotations.Test;
 
 public class StaticMethodAdvisorTest {
-
 	@Test
 	public void staticMethod(){
 		String configPath = "com/smart/advisor/beans.xml";

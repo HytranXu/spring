@@ -2,13 +2,13 @@ package com.smart.introduce;
 
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
-public class ControllablePerformaceMonitor
-		extends
-			DelegatingIntroductionInterceptor implements Monitorable, Testable {
+public class ControllablePerformaceMonitor extends DelegatingIntroductionInterceptor implements Monitorable, Testable {
 	private ThreadLocal<Boolean> MonitorStatusMap = new ThreadLocal<Boolean>();
+
 	public void setMonitorActive(boolean active) {
 		MonitorStatusMap.set(active);
 	}
+
 	public Object invoke(MethodInvocation mi) throws Throwable {
 		Object obj = null;
 		if (MonitorStatusMap.get() != null && MonitorStatusMap.get()) {
@@ -21,6 +21,7 @@ public class ControllablePerformaceMonitor
 		}
 		return obj;
 	}
+
 	public void test() {
 		// TODO Auto-generated method stub
 		System.out.println("dd");

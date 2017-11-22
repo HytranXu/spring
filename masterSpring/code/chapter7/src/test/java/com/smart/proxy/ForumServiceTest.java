@@ -4,30 +4,30 @@ import static org.testng.Assert.*;
 import org.testng.annotations.*;
 
 public class ForumServiceTest {
-
-
 	@Test
 	public void proxy() {
 		// 业务类正常编码的测试
-		// ForumService forumService = new ForumServiceImpl();
-		// forumService.removeForum(10);
-		// forumService.removeTopic(1012);
+		ForumService forumService = new ForumServiceImpl();
+		forumService.removeForum(10);
+		forumService.removeTopic(1012);
+		System.out.println("直接调用结束\n");
 
 		// 使用JDK动态代理
-/*		ForumService target = new ForumServiceImpl();
+		ForumService target = new ForumServiceImpl();
 		PerformaceHandler handler = new PerformaceHandler(target);
-		ForumService proxy = (ForumService) Proxy.newProxyInstance(target
-				.getClass().getClassLoader(),
-				target.getClass().getInterfaces(), handler);
+		ForumService proxy = (ForumService) Proxy.newProxyInstance(
+				target.getClass().getClassLoader(),
+				target.getClass().getInterfaces(),
+				handler);
 		proxy.removeForum(10);
-		proxy.removeTopic(1012);*/
+		proxy.removeTopic(1012);
+		System.out.println("JDK代理调用结束\n");
 
 		//使用CGLib动态代理
 		CglibProxy cglibProxy = new CglibProxy();
-		ForumService forumService = (ForumService)cglibProxy.getProxy(ForumServiceImpl.class);
+		forumService = (ForumService)cglibProxy.getProxy(ForumServiceImpl.class);
 		forumService.removeForum(10);
 		forumService.removeTopic(1023);
-		
+		System.out.println("CGlib代理调用结束\n");
 	}
-	 
 }

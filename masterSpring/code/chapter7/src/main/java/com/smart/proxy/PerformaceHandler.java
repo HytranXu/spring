@@ -8,8 +8,7 @@ public class PerformaceHandler implements InvocationHandler {
 	public PerformaceHandler(Object target){
 		this.target = target;
 	}
-	public Object invoke(Object proxy, Method method, Object[] args)
-			throws Throwable {
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		PerformanceMonitor.begin(target.getClass().getName()+"."+ method.getName());
 		Object obj = method.invoke(target, args);
 		PerformanceMonitor.end();

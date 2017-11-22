@@ -8,7 +8,6 @@ import com.smart.introduce.Monitorable;
 import static org.testng.Assert.*;
 import org.testng.annotations.*;
 public class IntroduceAdvisorTest {
-
     @Test
 	public void introduce() {
 		String configPath = "com/smart/advisor/beans.xml";

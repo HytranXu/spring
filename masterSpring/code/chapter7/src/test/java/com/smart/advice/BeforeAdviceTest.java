@@ -6,7 +6,6 @@ import static org.testng.Assert.*;
 import org.testng.annotations.*;
 
 public class BeforeAdviceTest {
-
     @Test
 	public void before() {
         Waiter target = new NaiveWaiter();

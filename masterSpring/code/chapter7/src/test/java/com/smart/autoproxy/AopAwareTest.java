@@ -11,8 +11,13 @@ public class AopAwareTest {
 	public void autoProxy() {
 		String configPath = "com/smart/autoproxy/beans-aware.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+
+		((ClassPathXmlApplicationContext)ctx).refresh();
+
 		Waiter waiter = (Waiter) ctx.getBean("waiter");
 		waiter.serveTo("John");
-		//waiter.greetTo("John");
+
+		System.out.println("\nBegin waiter::greetTo itself");
+		waiter.greetTo("John");
 	}
 }

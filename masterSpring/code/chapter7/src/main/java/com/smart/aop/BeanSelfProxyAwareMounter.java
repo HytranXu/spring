@@ -11,12 +11,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-
 @Component
 public class BeanSelfProxyAwareMounter implements SystemBootAddon, ApplicationContextAware {
-
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private ApplicationContext applicationContext;
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -24,9 +21,9 @@ public class BeanSelfProxyAwareMounter implements SystemBootAddon, ApplicationCo
     }
 
     public void onReady() {
-        Map<String, BeanSelfProxyAware> proxyAwareMap =
-                applicationContext.getBeansOfType(BeanSelfProxyAware.class);
+        Map<String, BeanSelfProxyAware> proxyAwareMap = applicationContext.getBeansOfType(BeanSelfProxyAware.class);
         if(proxyAwareMap!=null){
+            System.out.println("注册自身被代理的实例.");
             for (BeanSelfProxyAware beanSelfProxyAware : proxyAwareMap.values()) {
                 beanSelfProxyAware.setSelfProxy(beanSelfProxyAware);
                 if (logger.isDebugEnabled()) {

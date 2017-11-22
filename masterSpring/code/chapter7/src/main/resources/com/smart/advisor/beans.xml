@@ -7,16 +7,19 @@
 	http://www.springframework.org/schema/util 
 	http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
+
 	<!-- 普通方法名匹配切面 -->
 	<bean id="waiterTarget" class="com.smart.advisor.Waiter" />
 	<bean id="sellerTarget" class="com.smart.advisor.Seller" />
 	<bean id="greetingAdvice" class="com.smart.advisor.GreetingBeforeAdvice" />
+
 	<bean id="greetingAdvisor" class="com.smart.advisor.GreetingAdvisor"
 		p:advice-ref="greetingAdvice" />
 
 	<bean id="parent" abstract="true"
 		class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:interceptorNames="greetingAdvisor" p:proxyTargetClass="true" />
+		p:interceptorNames="greetingAdvisor"
+		p:proxyTargetClass="true" />
 	<bean id="waiter" parent="parent" p:target-ref="waiterTarget" />
 	<bean id="seller" parent="parent" p:target-ref="sellerTarget" />
 
@@ -32,7 +35,8 @@
 		</property>
 	</bean>
 	<bean id="waiter1" class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:interceptorNames="regexpAdvisor" p:target-ref="waiterTarget"
+		p:interceptorNames="regexpAdvisor"
+		p:target-ref="waiterTarget"
 		p:proxyTargetClass="true" />
 
 
@@ -48,28 +52,38 @@
 
 
 	<bean id="waiter2" class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:interceptorNames="dynamicAdvisor" p:target-ref="waiterTarget"
+		p:interceptorNames="dynamicAdvisor"
+		p:target-ref="waiterTarget"
 		p:proxyTargetClass="true" />
+
 
 	<!-- 控制流程切面 -->
 	<bean id="controlFlowPointcut" class="org.springframework.aop.support.ControlFlowPointcut">
-		<constructor-arg type="java.lang.Class"
-			value="com.smart.advisor.WaiterDelegate" />
+		<constructor-arg type="java.lang.Class" value="com.smart.advisor.WaiterDelegate" />
 		<constructor-arg type="java.lang.String" value="service" />
 	</bean>
+
 	<bean id="controlFlowAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"
-		p:pointcut-ref="controlFlowPointcut" p:advice-ref="greetingAdvice" />
+		p:pointcut-ref="controlFlowPointcut"
+		p:advice-ref="greetingAdvice" />
+
 	<bean id="waiter3" class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:interceptorNames="controlFlowAdvisor" p:target-ref="waiterTarget"
+		p:interceptorNames="controlFlowAdvisor"
+		p:target-ref="waiterTarget"
 		p:proxyTargetClass="true" />
+
 
 	<!-- 复合切点切面 -->
 	<bean id="gcp" class="com.smart.advisor.GreetingComposablePointcut" />
 	<bean id="composableAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"
-		p:pointcut="#{gcp.intersectionPointcut}" p:advice-ref="greetingAdvice" />
+		p:pointcut="#{gcp.intersectionPointcut}"
+		p:advice-ref="greetingAdvice" />
+
 	<bean id="waiter4" class="org.springframework.aop.framework.ProxyFactoryBean"
-		p:interceptorNames="composableAdvisor" p:target-ref="waiterTarget"
+		p:interceptorNames="composableAdvisor"
+		p:target-ref="waiterTarget"
 		p:proxyTargetClass="true" />
+
 
 	<!--引入切面-->
 	<bean id="introduceAdvisor"
@@ -83,4 +97,5 @@
 	      p:interceptorNames="introduceAdvisor"
 	      p:target-ref="forumServiceTarget"
 	      p:proxyTargetClass="true"/>
+
 </beans>

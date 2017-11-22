@@ -15,11 +15,8 @@ import java.util.List;
 
 @Component
 public class SystemBootManager implements ApplicationListener<ContextRefreshedEvent> {
-
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private List<SystemBootAddon> systemBootAddons = Collections.EMPTY_LIST;
-
     private boolean hasRunOnce = false;
 
     @Autowired(required = false)
@@ -31,6 +28,7 @@ public class SystemBootManager implements ApplicationListener<ContextRefreshedEv
 
     public void onApplicationEvent(ContextRefreshedEvent event) {
         if (!hasRunOnce) {
+            System.out.println("执行插件");
             for (SystemBootAddon systemBootAddon : systemBootAddons) {
                 systemBootAddon.onReady();
                 if (logger.isDebugEnabled()) {
@@ -39,6 +37,7 @@ public class SystemBootManager implements ApplicationListener<ContextRefreshedEv
             }
             hasRunOnce = true;
         }else{
+            System.out.println("已执行过容器启动插件集,本次忽略之.");
             if (logger.isDebugEnabled()) {
                 logger.debug("已执行过容器启动插件集,本次忽略之.");
             }
