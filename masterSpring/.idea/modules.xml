@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/code/chapter7/chapter7.iml" filepath="$PROJECT_DIR$/code/chapter7/chapter7.iml" />
       <module fileurl="file://$PROJECT_DIR$/code/chapter8/chapter8.iml" filepath="$PROJECT_DIR$/code/chapter8/chapter8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/masterSpring.iml" filepath="$PROJECT_DIR$/.idea/masterSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/mavenspringboot/AsynSpringboot/maven_springboot.iml" filepath="$PROJECT_DIR$/code/mavenspringboot/AsynSpringboot/maven_springboot.iml" />
     </modules>
   </component>
 </project>

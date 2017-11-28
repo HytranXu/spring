@@ -14,9 +14,11 @@
         <module name="chapter6" />
         <module name="chapter7" />
         <module name="chapter8" />
+        <module name="maven_springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Asyn_springboot" target="1.5" />
       <module name="chapter2" target="1.5" />
       <module name="chapter3" target="1.6" />
       <module name="chapter4" target="1.5" />
@@ -26,6 +28,7 @@
       <module name="chapter7" target="1.5" />
       <module name="chapter8" target="1.5" />
       <module name="masterSpring" target="1.5" />
+      <module name="maven_springboot" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

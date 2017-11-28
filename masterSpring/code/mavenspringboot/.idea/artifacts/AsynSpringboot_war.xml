@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AsynSpringboot:war">
+    <output-path>$PROJECT_DIR$/AsynSpringboot/target</output-path>
+    <root id="archive" name="maven springboot.war">
+      <element id="artifact" artifact-name="AsynSpringboot:war exploded" />
+    </root>
+  </artifact>
+</component>

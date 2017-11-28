@@ -3,7 +3,6 @@ package com.smart.anno;
 import java.lang.reflect.Method;
 import org.testng.annotations.*;
 public class ToolTest {
-
 	@Test
 	public void tool() {
 		Class clazz = ForumService.class;

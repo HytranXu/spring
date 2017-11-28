@@ -4,3 +4,7 @@
 4¡¢Î¢ÐÅ¡¢qq¶Ô½Ó
 5¡¢kafka
 6¡¢Portlet
+7¡¢AspectJ
+8¡¢dubbo\zookeeper
+9¡¢jaavssist ASM
+10¡¢slor
